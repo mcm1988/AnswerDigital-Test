@@ -4,16 +4,20 @@ from Values import strings
 from Pages.home import Home
 
 
-class TestAnswerDigitalTest(unittest.TestCase):
+class TestHomePageContent(unittest.TestCase):
 
     def setUp(self):
         self.driver = Driver()
         self.driver.navigate(strings.base_url)
 
-    def test_home_screen_components(self):
-        home_screen = Home(self.driver)
-        home_screen.validate_content_is_present()
-        home_screen.validate_footer_is_present()
+    def test_home_page_content(self):
+        home = Home(self.driver)
+        if not home.is_content_visible():
+            # report fail
+            self.fail()
+        else:
+            # report pass
+            print("PASS")
 
     def tearDown(self):
         self.driver.instance.quit()
