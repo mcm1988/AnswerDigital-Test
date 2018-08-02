@@ -19,5 +19,7 @@ Setup Instructions:
 2. Set the driver_path in the strings.py file to the folder where the webdriver .exes are located
 3. Set the 'webdriver' environment variable to 'CHROME', 'IE' 'FIREFOX' or 'EDGE' (If not set, it will default to chrome)
 
-To run the tests run nosetests and point to 'test_answerdigital.py' in the 'TestCases' folder 
+To run:
+
+Open a command prompt window and type *nosetests "{project_directory}/AnswerDigital-Test/TestCases"* and press enter 
 

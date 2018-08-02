@@ -4,7 +4,7 @@ from Values import strings
 from Pages.key_presses import KeyPresses
 
 
-class TestKeyPressing(unittest.TestCase):
+class TestKeyPressesAlphabet(unittest.TestCase):
 
     def setUp(self):
         self.driver = Driver()
